@@ -3,6 +3,7 @@ import Movies from "./components/Movies";
 import Watchlist from "./components/Watchlist";
 import Banner from "./components/Banner";
 
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 //importing BrowserRouter,Routes,Route from react-router-dom
 //BrowserRouter is the parent component that wraps around the entire application
@@ -20,6 +21,8 @@ function App() {
 
           <Route path="/watchlist" element={<Watchlist />} />
         </Routes>
+
+        
       </BrowserRouter>
     </>
   );
