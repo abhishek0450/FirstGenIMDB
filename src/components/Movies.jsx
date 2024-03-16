@@ -3,6 +3,7 @@ import Pagination from "./Pagination";
 import { useEffect } from "react";
 import { useState } from "react";
 import axios from "axios";
+import PropTypes from "prop-types";
 
 const Movies = () => {
   const [movies, setMovies] = useState([]);
@@ -47,8 +48,11 @@ const Movies = () => {
           return (
             <MovieCard
               key={movieObj.id}
+              movieObj={movieObj}
               poster_path={movieObj.poster_path}
               original_title={movieObj.original_title}
+             
+              
             />
           );
         })}
@@ -60,7 +64,9 @@ const Movies = () => {
 
 export default Movies;
 
-//api key
-//https://api.themoviedb.org/3/movie/popular?api_key=789d07148ac9596cfc9028dc63928cec&language=en-US&page=1
 
-//https://image.tmdb.org/t/p/orignal/${movieObj.poster_path}
+Movies.propTypes = {
+  handleAddToWatchlist: PropTypes.func.isRequired,
+};
+
+

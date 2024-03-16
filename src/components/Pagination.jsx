@@ -9,8 +9,6 @@ function Pagination({ nextPage, prevPage, page }) {
         </span>
         <span className="font-bold">{page}</span>
 
-        {/* <input type="number" className="w-12 text-center text-blue-400" value = {page} onChange = {(e)=>setPage(e.target.value)} min={1} max={500}/> */}
-
         <span className="m-10" onClick={nextPage}>
           <i className="fa-solid fa-forward"></i>
         </span>
