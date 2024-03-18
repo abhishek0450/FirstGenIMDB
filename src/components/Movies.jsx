@@ -5,7 +5,11 @@ import { useState } from "react";
 import axios from "axios";
 import PropTypes from "prop-types";
 
-const Movies = () => {
+const Movies = ({
+  handleAddToWatchlist,
+  handleRemoveFromWatchlist,
+  addwatchlist,
+}) => {
   const [movies, setMovies] = useState([]);
   const [page, setPage] = useState(1);
 
@@ -51,8 +55,9 @@ const Movies = () => {
               movieObj={movieObj}
               poster_path={movieObj.poster_path}
               original_title={movieObj.original_title}
-             
-              
+              handleAddToWatchlist={handleAddToWatchlist}
+              handleRemoveFromWatchlist={handleRemoveFromWatchlist}
+              addwatchlist={addwatchlist}
             />
           );
         })}
@@ -64,9 +69,8 @@ const Movies = () => {
 
 export default Movies;
 
-
 Movies.propTypes = {
   handleAddToWatchlist: PropTypes.func.isRequired,
+  handleRemoveFromWatchlist: PropTypes.func.isRequired,
+  addwatchlist: PropTypes.array.isRequired,
 };
-
-
