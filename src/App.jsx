@@ -47,7 +47,7 @@ function App() {
             element={
               <>
                 <Banner />
-                <Movies
+                <Movies  
                   handleAddToWatchlist={handleAddToWatchlist}
                   handleRemoveFromWatchlist={handleRemoveFromWatchlist}
                   addwatchlist={addwatchlist}
@@ -58,7 +58,7 @@ function App() {
 
           <Route
             path="/watchlist"
-            element={<Watchlist addwatchlist={addwatchlist} setAddWatchlist={setAddWatchlist}/>}
+            element={<Watchlist addwatchlist={addwatchlist} setAddWatchlist={setAddWatchlist} handleRemoveFromWatchlist={handleRemoveFromWatchlist}/>}
           />
         </Routes>
       </BrowserRouter>
