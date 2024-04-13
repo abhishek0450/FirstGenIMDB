@@ -1,9 +1,14 @@
+
+
 import MovieCard from "./MovieCard";
 import Pagination from "./Pagination";
+
 import { useEffect } from "react";
 import { useState } from "react";
 import axios from "axios";
 import PropTypes from "prop-types";
+
+
 
 const Movies = ({
   handleAddToWatchlist,
@@ -28,6 +33,7 @@ const Movies = ({
       setPage(page - 1);
     }
   }
+  
 
   useEffect(() => {
     axios
@@ -41,6 +47,8 @@ const Movies = ({
         console.error("Error fetching data:", error);
       });
   }, [page]);
+
+  
 
   return (
     <div>

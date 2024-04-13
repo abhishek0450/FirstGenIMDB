@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+
 
 function MovieCard({
   poster_path,
@@ -20,7 +22,7 @@ function MovieCard({
   return (
     <>
       <div
-        className="h-60 w-36 bg-cover bg-center rounded-xl m-5 hover:scale-105 transition delay-102 duration-300 ease-in-out flex flex-col justify-between items-end "
+        className="h-60 w-36 bg-cover bg-center rounded-xl m-5 hover:scale-105 transition delay-102 duration-300 ease-in-out flex flex-col justify-between items-end shadow-xl shadow-black"
         style={{
           backgroundImage: `url(https://image.tmdb.org/t/p/w185/${poster_path})`,
         }}
@@ -40,10 +42,12 @@ function MovieCard({
             &#128525;
           </button>
         )}
-
+        <Link to={`/moviedetails/${movieObj.id}`} className="w-full">
         <div className="text-base text-white text-center w-full bg-gray-900/60 rounded-b-lg p-1 ">
           {original_title}
+          
         </div>
+        </Link>
       </div>
     </>
   );

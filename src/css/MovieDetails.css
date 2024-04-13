@@ -1,0 +1,37 @@
+.main{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    grid-auto-rows: minmax(50px, auto);
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 0px;
+}
+
+.poster{
+    grid-row:  1/ 5;
+    grid-column: 1/2;
+    
+}
+
+.title{
+    grid-row: 1 / 2;
+    grid-column:  2/4;
+}
+
+.buttons{
+    grid-row: 2 / 3;
+    grid-column:  2/4;
+}
+
+.overview{
+    grid-row: 3 / 4;
+    grid-column:  2/4;
+}
+
+.credits{
+    grid-row: 4 / 5;
+    grid-column:  2/4;
+}
+
