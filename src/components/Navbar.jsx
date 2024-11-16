@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div className="flex border space-x-8 items-center bg-slate-900 ">
     <img className="w-[50px] h-[50px]" src={logo} alt="logo"  />
-    <Link to="/" className="text-3xl font-bold text-#393E46-900">Home</Link>
+    <Link to="/" className="text-3xl font-bold text-blue-400">Home</Link>
     <Link to="/TvShows" className="text-3xl font-bold text-blue-400">Tv Shows</Link>
     <Link to="/watchlist" className="text-3xl font-bold text-blue-400">Watchlist</Link>
     
