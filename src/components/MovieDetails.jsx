@@ -36,12 +36,12 @@ function MovieDetails() {
       <div className='box poster flex items-center justify-center rounded-lg'>
         <img className='rounded-3xl h-[350px] shadow-xl shadow-black' src={`https://image.tmdb.org/t/p/w500${poster_path}`} alt={title} />
       </div>
-      <div className='box title text-xl font-bold text-blue-400 flex items-center'>{title}</div>
-      <div className='box buttons text-blue-400 flex items-center'>
+      <div className='box title text-xl font-bold text-black-400 flex items-center'>{title}</div>
+      <div className='box buttons text-black-400 flex items-center'>
         <FontAwesomeIcon icon={faHeart} size="3xl" style={{color: "#ff0000",}} />
       </div>
-      <div className='box overview text-blue-400 flex items-center'>{overview}</div>
-      <div className='box credits text-3xl font-bold text-blue-400 flex items-center'>{vote_average}</div>
+      <div className='box overview text-black-400 flex items-center'>{overview}</div>
+      <div className='box credits text-3xl font-bold text-black-400 flex items-center'>{vote_average}</div>
     </div>
   );
 }
