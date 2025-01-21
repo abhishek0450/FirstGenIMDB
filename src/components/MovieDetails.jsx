@@ -48,6 +48,15 @@ function MovieDetails() {
           </p>
         </div>
       </div>
+<<<<<<< HEAD
+=======
+      <div className='box title text-xl font-bold text-black-400 flex items-center'>{title}</div>
+      <div className='box buttons text-black-400 flex items-center'>
+        <FontAwesomeIcon icon={faHeart} size="3xl" style={{color: "#ff0000",}} />
+      </div>
+      <div className='box overview text-black-400 flex items-center'>{overview}</div>
+      <div className='box credits text-3xl font-bold text-black-400 flex items-center'>{vote_average}</div>
+>>>>>>> 159462f127defa3a4859dc7c04f131d50d7dc5aa
     </div>
   );
 }
