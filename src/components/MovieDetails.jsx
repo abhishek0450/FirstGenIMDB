@@ -29,7 +29,7 @@ function MovieDetails() {
 
   return (
     <div className="main mt-16 flex flex-col items-center px-4 md:px-16 lg:px-32">
-      <div className="flex flex-col md:flex-row items-center gap-8 bg-slate-200 p-6 rounded-xl shadow-lg">
+      <div className="flex flex-col md:flex-row items-center gap-8 bg-white p-6 rounded-xl shadow-lg">
         {/* Movie Poster */}
         <div className="poster">
           <img
@@ -42,21 +42,12 @@ function MovieDetails() {
         {/* Movie Details */}
         <div className="flex flex-col text-center md:text-left">
           <h1 className="title text-2xl md:text-4xl font-bold text-gray-800 mb-4">{title}</h1>
-          <p className="overview text-gray-900 text-lg leading-relaxed mb-4">{overview}</p>
+          <p className="overview text-gray-600 text-lg leading-relaxed mb-4">{overview}</p>
           <p className="rating text-lg font-semibold text-gray-700">
-            Rating: <span className="text-yellow-700 text-2xl font-bold">{vote_average.toFixed(1)}</span>
+            Rating: <span className="text-yellow-500 text-2xl font-bold">{vote_average.toFixed(1)}</span>
           </p>
         </div>
       </div>
-<<<<<<< HEAD
-=======
-      <div className='box title text-xl font-bold text-black-400 flex items-center'>{title}</div>
-      <div className='box buttons text-black-400 flex items-center'>
-        <FontAwesomeIcon icon={faHeart} size="3xl" style={{color: "#ff0000",}} />
-      </div>
-      <div className='box overview text-black-400 flex items-center'>{overview}</div>
-      <div className='box credits text-3xl font-bold text-black-400 flex items-center'>{vote_average}</div>
->>>>>>> 159462f127defa3a4859dc7c04f131d50d7dc5aa
     </div>
   );
 }
